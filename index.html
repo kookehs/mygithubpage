@@ -3,10 +3,14 @@
 	<head>
 		<meta name="google-site-verification" content="D2ePiN3vxTAMcx38nr9ZAhCPnRya482bnuh5YbSGXW0" />
 	   	<meta charset="utf-8">
-       		<title>Panopticon</title>
+        <title>Panopticon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
        
        <link href="styles.css" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <script src="jquery-1.2.0.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+          
 	
 		<!--COMMENT: This allows you to link to a font-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
@@ -21,31 +25,77 @@
 			  <div class="container-fluid">
 				<div>
 				  <ul class="nav nav-justified">
-				  	<li><a class="active" href="http://whos-watching.me/">Panopticon</a></li>
-					<li><a href="http://whos-watching.me/media">Media</a></li>
+				  	<li id="logo"><a class="active" href="http://whos-watching.me/"><img src="images/PanopticonLogo.jpg" width="504" height="177"/></a></li>
+					<li><a href="http://whos-watching.me/blog">Blog</a></li>
+                    <li><a href="http://whos-watching.me/media">Media</a></li>
+                    <li><a href="http://whos-watching.me/gameplay">Gameplay</a></li>
 					<li><a href="http://whos-watching.me/about/">About</a></li>
 				  </ul>
 				</div>
 			
 			  </div>
-			</nav>	
-	
-        <div id="iconLarge"> <img src="images/PanopticonLogo.jpg" width="1008" height="353"/></div>
-           
-        <br></br>
-        <!--Social Media links-->
-        <p id="socialInd">Find us:
-            <a target="_blank" title="Find Us On Twitch" href="http://www.twitch.tv/panopticonthegame/profile">
-                <img alt="Follow Us On Twitch" src="images/GlitchIcon_purple.png" width="40" height="40" border=0></a>
-            <a target="_blank" title="Find Us On Twitter" href="https://twitter.com/playpanopticon">
-                <img alt="Follow Us On Twitter" src="images/twitter_40x40.png" width="40" height="40" border=0></a>
-            <a target="_blank" title="Find Us On Reddit" href="https://www.reddit.com/user/panopticonthegame/">
-                <img alt="Follow Us On Reddit" src="images/reddit-alien.png" width="40" height="40" border=0></a>
-        </p>
-        
+			</nav>
+            
+            <div id="content">
+                <div id="thecarousel" class="carousel slide" data-ride="carousel">
+                    <ol class = "carousel-indicators">
+                        <li data-target = "#thecarousel" data-slide-to = "0" class = "active"></li>
+                        <li data-target = "#thecarousel" data-slide-to = "1"></li>
+                        <li data-target = "#thecarousel" data-slide-to = "2"></li>
+                    </ol>
+                
+                
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src = "images/MockupImage.png" width="960" height="540" alt="forestBiome" id="carouselItems" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h3>Forest Biome</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img  src = "images/TheNomad.png" width="960" height="540" alt="avatarSpritesheet" id="carouselItems" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h3>Avatar Spritesheet</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <video width="960" height="540" controls alt="coreRelease" id="carouselItems" class="img-responsive">
+                          <source src="videos/CoreRelease.mp4" type="video/mp4">
+                          <source src="videos/CoreRelease.ogg" type="video/ogg">
+                          Your browser does not support HTML5 video.
+                        </video>
+                        <div class="carousel-caption">
+                            <h3>Core Release Video</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <a class="carousel-control left" href = "#thecarousel" role="button" data-slide = "prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                
+                 <a class="carousel-control right" href = "#thecarousel" role="button" data-slide = "next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </div>
+               
         </div>	<!--end of container-->
         
-        <div id="footer"></div>
+        <div id="footer">
+            <div id="socialMedia">
+                <a target="_blank" title="Find Us On Twitch" href="http://www.twitch.tv/panopticonthegame/profile">
+                    <img alt="Follow Us On Twitch" src="images/GlitchIcon_purple.png" width="40" height="40" border=0></a>
+                <a target="_blank" title="Find Us On Twitter" href="https://twitter.com/playpanopticon">
+                    <img alt="Follow Us On Twitter" src="images/twitter_40x40.png" width="40" height="40" border=0></a>
+                <a target="_blank" title="Find Us On Reddit" href="https://www.reddit.com/user/panopticonthegame/">
+                    <img alt="Follow Us On Reddit" src="images/reddit-alien.png" width="40" height="40" border=0></a>
+            </div>
+        </div>
 	
 	</body>
 <html/>
