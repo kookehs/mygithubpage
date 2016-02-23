@@ -8,8 +8,8 @@
        
        <link href="styles.css" rel="stylesheet" type="text/css">
        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-      <script src="jquery-1.2.0.js"></script>
-      <script src="bootstrap/js/bootstrap.min.js"></script>
+       <script src="jquery-1.2.0.js"></script>
+       <script src="bootstrap/js/bootstrap.min.js"></script>
           
 	
 		<!--COMMENT: This allows you to link to a font-->
@@ -17,26 +17,37 @@
 	
 	</head>
 	<body>
-		
         <!--Nav bar for main page and about-->
 		<div id="container">
-	
-			<nav class="nav">
-			  <div class="container-fluid">
-				<div>
-				  <ul class="nav nav-justified">
-				  	<li id="logo"><a class="active" href="http://whos-watching.me/"><img src="images/PanopticonLogo.jpg" width="504" height="177"/></a></li>
-					<li><a href="http://whos-watching.me/blog">Blog</a></li>
-                    <li><a href="http://whos-watching.me/media">Media</a></li>
-                    <li><a href="http://whos-watching.me/gameplay">Gameplay</a></li>
-					<li><a href="http://whos-watching.me/about/">About</a></li>
-				  </ul>
-				</div>
+            <nav class="navbar navbar-inverse navbar-static-top role="navigation">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <!--Logo image button to go make to main page-->
+                        <a href="http://whos-watching.me/"><img src="images/PanopticonLogo.jpg" class="img-responsive" id="logo"/></a>
+                        
+                        <!--Button that is created for menu when screen size reaches a certain limit-->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!--Buttons to go to different pages of the website-->
+                    <div class="collapse navbar-collapse pull-right" id="navItems">
+                        <ul class="nav navbar-nav">
+                            <li><a href="http://whos-watching.me/blog">Blog</a></li>
+                            <li><a href="http://whos-watching.me/media">Media</a></li>
+                            <li><a href="http://whos-watching.me/gameplay">Gameplay</a></li>
+                            <li><a href="http://whos-watching.me/about/">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 			
-			  </div>
-			</nav>
-            
             <div id="content">
+                <!--Setup the Carousel slides to be able to assign the images/videos to a slide index-->
                 <div id="thecarousel" class="carousel slide" data-ride="carousel">
                     <ol class = "carousel-indicators">
                         <li data-target = "#thecarousel" data-slide-to = "0" class = "active"></li>
@@ -44,8 +55,9 @@
                         <li data-target = "#thecarousel" data-slide-to = "2"></li>
                     </ol>
                 
-                
+                <!--Adding the content images/videos to the Carousel slide-->
                 <div class="carousel-inner" role="listbox">
+                    <!--Image slide index 0 the Forest Biome mockup image-->
                     <div class="item active">
                         <img src = "images/MockupImage.png" width="960" height="540" alt="forestBiome" id="carouselItems" class="img-responsive">
                         <div class="carousel-caption">
@@ -53,6 +65,7 @@
                         </div>
                     </div>
                     
+                    <!--Image slide index 1 the avatar spritesheet-->
                     <div class="item">
                         <img  src = "images/TheNomad.png" width="960" height="540" alt="avatarSpritesheet" id="carouselItems" class="img-responsive">
                         <div class="carousel-caption">
@@ -60,6 +73,7 @@
                         </div>
                     </div>
                     
+                    <!--Video slide index 2 the core release video-->
                     <div class="item">
                         <video width="960" height="540" controls alt="coreRelease" id="carouselItems" class="img-responsive">
                           <source src="videos/CoreRelease.mp4" type="video/mp4">
@@ -72,12 +86,14 @@
                     </div>
                 </div>
                 
+                <!--Adding a previous arrow button to look at the previous Carousel slides-->
                 <a class="carousel-control left" href = "#thecarousel" role="button" data-slide = "prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 
-                 <a class="carousel-control right" href = "#thecarousel" role="button" data-slide = "next">
+                <!--Adding a next arrow button to look at the next Carousel slides-->
+                <a class="carousel-control right" href = "#thecarousel" role="button" data-slide = "next">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -86,12 +102,18 @@
                
         </div>	<!--end of container-->
         
+        <!--The bottom div of the page containing links to various parts of the website and external social media links-->
         <div id="footer">
             <div id="socialMedia">
+                <!--Twitch social media icon-->
                 <a target="_blank" title="Find Us On Twitch" href="http://www.twitch.tv/panopticonthegame/profile">
                     <img alt="Follow Us On Twitch" src="images/GlitchIcon_purple.png" width="40" height="40" border=0></a>
+                
+                <!--Twitter social media icon-->
                 <a target="_blank" title="Find Us On Twitter" href="https://twitter.com/playpanopticon">
                     <img alt="Follow Us On Twitter" src="images/twitter_40x40.png" width="40" height="40" border=0></a>
+                
+                <!--Reddit social media icon-->
                 <a target="_blank" title="Find Us On Reddit" href="https://www.reddit.com/user/panopticonthegame/">
                     <img alt="Follow Us On Reddit" src="images/reddit-alien.png" width="40" height="40" border=0></a>
             </div>

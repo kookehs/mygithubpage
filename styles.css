@@ -15,18 +15,31 @@ p  {
 }
 
 a {
-	font-size: 28px;
+	font-size: 42px;
+    color: #901389 !important;
+}
+
+.navbar{
+    background-color: #000000 !important;
+    text-align: center;
+    color: #901389;
+}
+
+#navItems{
+    padding-top: 60px;
 }
 
 /*make it so the logo home page button does not have the hover effect that the other buttons have*/
-.nav.nav-justified li a #logo{
-	color: black;
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus{
+	color:#901389 !important;
+	background-color:white !important;
 }
 
-.nav.nav-justified > #logo > a:hover,
-.nav.nav-justified > #logo > a:focus{
-	color:black;
-	background-color:black;
+#logo{
+    margin: 0 auto;
+    padding: 0;
+    width:500px;
 }
 
 /*Below deesignates the styles for each of the HTML items */
@@ -37,6 +50,7 @@ a {
 	background-color:#000000;
 	top: 5px;
 	bottom: 200px;
+    float:center;
 }
 
 #footer{
