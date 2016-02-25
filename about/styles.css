@@ -10,23 +10,30 @@ body{
 
 p  {
 	font-family: 'Roboto Mono', serif;
-	font-size: 21px;
+	font-size: 24px;
     color: #FFFFFF;
 }
 
 a {
-	font-size: 42px;
+	font-size: 28px;
     color: #901389 !important;
 }
 
 .navbar{
     background-color: #000000 !important;
     text-align: center;
+    float:center;
     color: #901389;
 }
 
-#navItems{
-    padding-top: 60px;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
 /*make it so the logo home page button does not have the hover effect that the other buttons have*/
@@ -37,14 +44,13 @@ a {
 }
 
 #logo{
-    margin: 0 auto;
-    padding: 0;
+    float:center;
     width:500px;
 }
 
 /*Below deesignates the styles for each of the HTML items */
 #container {
-	width: 60%;
+	width: 80%;
 	height: 95%;
 	margin: 0 auto;
 	background-color:#000000;
