@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	   	<meta charset="UTF-8">
+	   	<meta http-equiv="content-type" content="text/html" charset="utf-8">
         <title>About</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
-       <link href="css/styles.css" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-       <script src="../jquery-1.2.0.js"></script>
-       <script src="../bootstrap/js/bootstrap.min.js"></script>
-	
+        <link rel="css/animate.css" href="../bootstrap/css/bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <script src="../jquery-1.2.0.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap_validator.js"></script>
 	</head>
 	<body>
         <!--Nav bar for main page and about-->
@@ -56,40 +57,40 @@
                 
                 <!--Fourm structure used for the contact forum in the about page-->
                 <div id="contact">
-                    <form class="form-horizontal" role="form" method="post" action="php/process.php">
+                    <form class="form-horizontal" id="contactForm" role="form" method="post">
                         <div class="form-group">
                             <label for="name" class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                                <?php echo "<p class='text-danger'>$errName</p>";?>
+                                <input type="text" data-error="Enter Name" class="form-control" id="name" placeholder="Enter name" required>
+                                <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="subject" class="col-sm-2 control-label">Subject</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="subject" name="subject" value="<?php echo htmlspecialchars($_POST['subject']); ?>">
-                                    <?php echo "<p class='text-danger'>$errSubject</p>";?>
+                                <input type="subject" data-error="Enter Subject" class="form-control" id="subject" placeholder="Enter Subject" required>
+                                <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="email" class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                                 <?php echo "<p class='text-danger'>$errEmail</p>";?>
+                                <input type="email" data-error="Enter email" class="form-control" id="email" placeholder="example@domain.com" required>
+                                <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="message" class="col-sm-2 control-label">Message</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']); ?></textarea>
-                                <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                                <textarea class="form-control" data-error="Enter Message" id="message" rows=4 placeholder="Enter message" required></textarea>
+                                <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                            <label for="human" class="col-sm-2 control-label">So we know your not a robot what is 2 + 3 = ?</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                                <?php echo "<p class='text-danger'>$errHuman</p>";?>
+                                <input type="answer" data-error="Try Again" class="form-control" id="human" placeholder="#" required>
+                                <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="form-group">
@@ -98,9 +99,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-sm-10 col-sm-offset-2">
-                                <?php echo $result; ?>
-                            </div>
+                            <div class="col-sm-10 col-sm-offset-2 hidden" id="submitedMessage"></div>
                         </div>
                     </form>
                 </div>
