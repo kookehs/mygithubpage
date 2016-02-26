@@ -27,7 +27,8 @@ a {
 }
 
 h3{
-    color: #901389 !important;
+    color: #FFFFFF !important;
+    text-decoration: underline;
 }
 
 .navbar{
@@ -140,10 +141,11 @@ h3{
 #personInfo{
     margin: 0 auto;
     padding: 0;
+    border-bottom: 0.5px solid #ccc;
 }
 
 #contact{
     margin: 0 auto;
     padding: 0;
-    padding-top: 10%;
+    padding-top: 30px;;
 }

@@ -72,39 +72,19 @@ a {
     float: right;
 }
 
-.content {
-	width: 1000px;
+#content{
+    width: 80%;
+	height: 95%;
 	margin: 0 auto;
-    background-color:#000000;
-	padding-bottom: 40px;
-    display:inline-block;
+	background-color:#000000;
+	top: 5px;
+	bottom: 200px;
+    float:center;
 }
 
-.content p.entry-title {
-	font-size: 30px;
-	color: #3D5771; 
-	margin-bottom: 10px;
-	margin-top: 60px;
-	margin-left:5px;
+#selectionImages{
+    width: 80%;
+    height: 80%;
+    float:center;
 }
 
-.content p.date {
-	font-size: 20px;
-	color: #5B798A; 
-	margin-bottom: 20px;
-	margin-top: 5px;
-	margin-left:5px;
-}
-
-.content p {
-	font-size:16px;
-	line-height: 24px;
-	color: #565656;
-	margin-left: 5px;
-	margin-right: 20px;
-}
-
-.content img.displayed {
-	position:relative;
-	margin-top: 5px;
-}

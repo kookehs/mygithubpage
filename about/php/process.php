@@ -67,6 +67,7 @@ $success = mail($EmailTo, $subject, $Body, "From:".$email);
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
+   header( "Location: http://whos-watching.me/about" );
 }else{
     if($errorMSG == ""){
         echo "Something went wrong :(";
