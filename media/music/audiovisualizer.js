@@ -14,7 +14,7 @@ $(document).ready(function () {
                 function (audio) { 
                 if(countOuter === countInner) {
                   if(!audioElement.canPlayType) audioElement.src = "audio/music_song.mp3.ogg";
-                  var audioSrc = audioCtx.createMediaElementSource(audioElement);
+                  audioSrc = audioCtx.createMediaElementSource(audioElement);
                   var analyser = audioCtx.createAnalyser();
 
                   // Bind our analyser to the media element source.
@@ -63,7 +63,7 @@ $(document).ready(function () {
                                return d;
                             })
                             .attr('fill', function(d) {
-                               return 'rgb(0, 0, ' + d + ')';
+                               return 'rgb(144, 19, ' + d + ')';
                             });
                       }
 
@@ -80,6 +80,7 @@ $(document).ready(function () {
   
   $(window).resize(function() {
       $('svg').remove();
+      audioSrc.disconnect();
       visulaizer();
   });
 });
