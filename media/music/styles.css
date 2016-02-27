@@ -92,7 +92,12 @@ a {
     border-bottom: 0.5px solid #ccc;
 }
 
+#audioElement{
+    width: 85%;
+}
+
 .audio{
+    width: 85%;
     top:10px;
     left:10px;
     border:solid;
