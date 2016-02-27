@@ -43,6 +43,10 @@ a {
 	background-color:white !important;
 }
 
+#navItems{
+    padding-top: 60px;
+}
+
 #logo{
     float:center;
     width:500px;
