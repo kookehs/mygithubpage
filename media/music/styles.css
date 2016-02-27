@@ -91,3 +91,9 @@ a {
 #musicAsset{
     border-bottom: 0.5px solid #ccc;
 }
+
+.audio{
+    top:10px;
+    left:10px;
+    border:solid;
+}
