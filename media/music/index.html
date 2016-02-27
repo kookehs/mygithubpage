@@ -10,6 +10,8 @@
        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
        <script src="../../jquery-1.2.0.js"></script>
        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <script src="d3.js" charset="utf-8"></script>
+       <script src="audiovisualizer.js"></script>
           
 	
 		<!--COMMENT: This allows you to link to a font-->
@@ -59,7 +61,12 @@
 			
             <div id="container">
                 <div id="musicAsset" class="row">
-                    <!--<img src="images/MockupImage.png" id="shownImages" class="img-responsive col-sm-2"/>-->
+                    <div id="bars" class="audio col-sm-10"></div>
+                    <audio id="audioElement" class="col-sm-10"  controls>
+                        <source src="audio/music_song.ogg" type="audio/ogg"/>
+                        <source src="audio/music_song.mp3" type="audio/mpeg"/>
+                        Your browser does not support the audio element.
+                    </audio>
                     <h3 class="col-sm-10">Game World Music:</h3>
                     <p class="col-sm-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -67,6 +74,18 @@
                     </p>
                     <p class="col-sm-5 pull-right">-Matt Vollmer</p> 
                 </div>
+                <!--<div id="musicAsset" class="row">
+                    <div id="bars" class="audio col-sm-10"></div>
+                    <audio id="audioElement" class="audioElement col-sm-10" src="audio/slash.mp3" controls>
+                        Your browser does not support the audio element.
+                    </audio>
+                    <h3 class="col-sm-10">Game World Music:</h3>
+                    <p class="col-sm-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                    </p>
+                    <p class="col-sm-5 pull-right">-Matt Vollmer</p> 
+                </div>-->
             </div>
                
         </div>	<!--end of container-->
