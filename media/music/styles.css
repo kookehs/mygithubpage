@@ -94,10 +94,20 @@ a {
 
 #musicAsset{
     border-bottom: 0.5px solid #ccc;
+    float:center;
 }
 
 #audioElement{
     width: 85%;
+    float:center;
+    display: table;
+    margin: 0 auto;
+}
+
+#bars{
+	 float:center;
+     display: table;
+     margin: 0 auto;
 }
 
 .audio{
@@ -105,4 +115,11 @@ a {
     top:10px;
     left:10px;
     border:solid;
+    float:center;
+}
+
+.text{
+	float:center;
+    display: table;
+    margin: 0 auto;
 }

@@ -76,39 +76,24 @@ a {
     float: right;
 }
 
-.content {
-	width: 1000px;
+#blogPost{
 	margin: 0 auto;
-    background-color:#000000;
-	padding-bottom: 40px;
-    display:inline-block;
+	float:center;
+	text-align: center;
 }
 
-.content p.entry-title {
-	font-size: 30px;
-	color: #3D5771; 
-	margin-bottom: 10px;
-	margin-top: 60px;
-	margin-left:5px;
+.posts{
+	border-bottom: 0.5px solid #ccc;
+	margin: 0 auto;
 }
 
-.content p.date {
-	font-size: 20px;
-	color: #5B798A; 
-	margin-bottom: 20px;
-	margin-top: 5px;
-	margin-left:5px;
+.imgPosts{
+	margin: 0 auto;
+	float: center;
 }
 
-.content p {
-	font-size:16px;
-	line-height: 24px;
-	color: #565656;
-	margin-left: 5px;
-	margin-right: 20px;
-}
-
-.content img.displayed {
-	position:relative;
-	margin-top: 5px;
+.text{
+	float:center;
+    display: table;
+    margin: 0 auto;
 }
