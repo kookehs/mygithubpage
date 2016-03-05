@@ -76,46 +76,9 @@ a {
     float: right;
 }
 
-#content{
-    width: 80%;
-	height: 95%;
+.imgPosts{
 	margin: 0 auto;
-	background-color:#000000;
-	top: 5px;
-	bottom: 200px;
-    float:center;
-}
-
-#shownImages{
-    padding: 0;
-    margin: 0 auto;
-    margin-top:5%;
-}
-
-#musicAsset{
-    border-bottom: 0.5px solid #ccc;
-    float:center;
-}
-
-#audioElement{
-    width: 85%;
-    float:center;
-    display: table;
-    margin: 0 auto;
-}
-
-#bars{
-	 float:center;
-     display: table;
-     margin: 0 auto;
-}
-
-.audio{
-    width: 85%;
-    top:10px;
-    left:10px;
-    border:solid;
-    float:center;
+	float: center;
 }
 
 .text{
