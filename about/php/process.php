@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Contact Form</title>
-    /head>
+    </head>
     <body>
         <?php
         $name = $_POST["name"];
