@@ -8,8 +8,6 @@ function replaceImage(idSmall){
 	var img = document.getElementById(idSmall);
 	
 	hiddenImg.src = img.src;
-	if(idSmall == "img0") hiddenImg.style = "width: 40%";
-	else hiddenImg.style = "width: 60%";
 
 	$(win).removeClass('hidden');
 	$(win).addClass('overlay');

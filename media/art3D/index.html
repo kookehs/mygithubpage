@@ -10,7 +10,7 @@
        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
        <script src="../../jquery-1.2.0.js"></script>
        <script src="../../bootstrap/js/bootstrap.min.js"></script>
-          
+       <script src="BlowUp.js"></script>
 	
 		<!--COMMENT: This allows you to link to a font-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
@@ -18,7 +18,7 @@
 	</head>
 	<body>
         <!--Nav bar for main page and about-->
-		<div id="container">
+		<div id="containerNav" class="container">
             <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
                 <div class="container-fluid">
 
@@ -58,17 +58,17 @@
                 </div>
             </nav>
 			
-            <div id="container">
-                <div id="artAssest" class="row">
-                    <img src="images/MockupImage.png" id="shownImages" class="img-responsive col-sm-2"/>
+            <div id="containerContent" class="container">
+                <div id="asset0" class="artAssest row">
+                    <img src="images/MockupImage.png" id="img0" onclick="replaceImage('img0');" class="shownImages img-responsive col-sm-2"/>
                     <h3 class="col-sm-10">Forest Biome Mockup:</h3>
                     <p class="col-sm-10">A first look at what the forest world biome looks like. Created in
                     	Blender.
                     </p>
                     <p class="col-sm-5 pull-right">-Alex Mao</p> 
                 </div>
-                <div id="artAssest" class="row">
-                    <img src="images/Camera.png" id="shownImages" class="img-responsive col-sm-2"/>
+                <div id="asset1" class="artAssest row">
+                    <img src="images/Camera.png" id="img1" onclick="replaceImage('img1');" class="shownImages img-responsive col-sm-2"/>
                     <h3 class="col-sm-10">Camera Surveillance:</h3>
                     <p class="col-sm-10">A camera which can be found attached to any tree in the game world.
                     	Proof that the player is always being watched even when their is no one on the Twich chat.
@@ -76,6 +76,11 @@
                     <p class="col-sm-5 pull-right">-Jacob Le</p> 
                 </div>
             </div>
+            
+            <div id="win" onclick="exitImage();" class="window img-responsive hidden">
+	        	<img src="images/Back.jpg"  class="popUp img-responsive"/>
+	        	<img src="images/Back.jpg" id="imgPop" class="imgPopUp img-responsive"/>
+	        </div>
                
         </div>	<!--end of container-->
         
