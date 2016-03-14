@@ -8,17 +8,18 @@
        
        <link href="styles.css" rel="stylesheet" type="text/css">
        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bootstrap/css/boostrap_overlay.css">
        <script src="../../jquery-1.2.0.js"></script>
        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+       <script src="BlowUp.js"></script>
           
-	
 		<!--COMMENT: This allows you to link to a font-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 	
 	</head>
 	<body>
         <!--Nav bar for main page and about-->
-		<div id="container">
+		<div  id="containerNav" class="container">
             <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
                 <div class="container-fluid">
 
@@ -58,32 +59,43 @@
                 </div>
             </nav>
 			
-            <div id="container">
-                <div id="artAssest" class="row">
-                    <img src="images/Sword.png" id="shownImages" class="img-responsive col-sm-2"/>
+            <div id="containerContent" class="container">
+                <div id="asset0" class="artAssest row panel-body">
+                    <img src="images/Sword.png" id="img0" onclick="replaceImage('img0');" class="shownImages img-responsive col-sm-2"/>
+                    
                     <h3 class="col-sm-10">Sword:</h3>
                     <p class="col-sm-10">2D sprite image for a sword. This item is used by the player to fight off bears
                     	and other vicious creatures.
                     </p>
-                    <p class="col-sm-5 pull-right">-Annette Yao</p> 
+                    <p class="col-sm-5 pull-right">-Annette Yao</p>
                 </div>
-                <div id="artAssest" class="row">
-                    <img src="images/winterbiome.jpg" id="shownImages" class="img-responsive col-sm-2"/>
+                <div id="asset1" class="artAssest row">
+                    <img src="images/winterbiome.jpg" id="img1" onclick="replaceImage('img1');" class="shownImages img-responsive col-sm-2"/>
+                    
+			        
                     <h3 class="col-sm-10">Winter Biome Concept:</h3>
                     <p class="col-sm-10">Concept art for another game world level for Panopticon. The winter biome will
                     	have a lot of cool new features and creatures that are unavailable in the forest and other biomes.
                     </p>
-                     <p class="col-sm-5 pull-right">-Reshma Zachariah</p> 
+                    <p class="col-sm-5 pull-right">-Reshma Zachariah</p>
                 </div>
-                <div id="artAssest" class="row">
-                    <img src="images/TheNomad.png" id="shownImages" class="img-responsive col-sm-2"/>
+                <div id="asset2" class="artAssest row">
+                    <img src="images/TheNomad.png" id="img2" onclick="replaceImage('img2');" class="shownImages img-responsive col-sm-2"/>
+                    
+                   
+			        
                     <h3 class="col-sm-10">Nomad Walking Spritesheet:</h3>
                     <p class="col-sm-10">The spritesheet used for the 2D character that the player plays as. A gender
                     	neutral character trapped in a strange place.
                     </p>
-                     <p class="col-sm-5 pull-right">-Lindsay Van Zandt</p> 
+                    <p class="col-sm-5 pull-right">-Lindsay Van Zandt</p>
                 </div>
             </div>
+            
+            <div id="win" onclick="exitImage();" class="window img-responsive hidden">
+	        	<img src="images/Back.jpg"  class="popUp img-responsive"/>
+	        	<img src="images/Back.jpg" id="imgPop" class="imgPopUp img-responsive"/>
+	        </div>
                
         </div>	<!--end of container-->
         
