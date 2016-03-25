@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
-      //  $("feedbackMessage").addClass("hiddem");
+      //  $("feedbackMessage").addClass("hidden");
 
         $.ajax({
             url: "http://formspree.io/panopticon@whos-watching.me", 
