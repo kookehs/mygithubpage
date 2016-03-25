@@ -11,7 +11,7 @@
         <script src="../jquery-1.2.0.js"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="js/bootstrap_validator.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="js/contactForm"></script>
 	</head>
 	<body>
         <!--Nav bar for main page and about-->
@@ -135,59 +135,42 @@
                 </div>
 
                 <!--Fourm structure used for the contact forum in the about page-->
-                <!--<div id="contact">
-                    <h3 style="text-align: right;">Send us an email if you have questions or comments (PS the forum currently doesn't work sorry).</h3>
-                    <form class="form-horizontal" id="contactForm" method="post" action="http://whos-watching.me/about/php/process.php">
+                <div id="contact">
+                    <h3 style="text-align: right;">Send us an email if you have questions or comments.</h3>
+                    <form class="form-horizontal" id="contactForm" method="post">
                         <div class="form-group">
                             <label for="name" class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
-                                <input type="text" data-error="Enter Name" class="form-control" id="name" placeholder="Enter name" required>
-                                <div class="help-block with-errors"></div>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="subject" class="col-sm-2 control-label">Subject</label>
                             <div class="col-sm-10">
-                                <input type="subject" data-error="Enter Subject" class="form-control" id="subject" placeholder="Enter Subject" required>
-                                <div class="help-block with-errors"></div>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter Subject" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="email" class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" data-error="Enter email" class="form-control" id="email" placeholder="example@domain.com" required>
-                                <div class="help-block with-errors"></div>
+                                <input type="email" class="form-control" id="email" placeholder="example@domain.com" name="_replyto" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="message" class="col-sm-2 control-label">Message</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" data-error="Enter Message" id="message" rows=4 placeholder="Enter message" required></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="human" class="col-sm-2 control-label">So we know your not a robot what is 2 + 3 = ?</label>
-                            <div class="col-sm-10">
-                                <input type="answer" data-error="Try Again" class="form-control" id="human" placeholder="#" required>
-                                <div class="help-block with-errors"></div>
+                                <textarea class="form-control" id="message" rows=4 placeholder="Enter message" required></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-10 col-sm-offset-2">
+                            	<input type="text" name="_gotcha" style="display:none" />
                                 <button type="submit" id="form-submit" class="btn btn-primary btn-success">Submit</button>
-
+                                <p class="hidden" id='feedbackMessage'>Your message was sent :). We will respond back soon.</p>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-10 col-sm-offset-2 hidden" id="submitedMessage"></div>
-                        </div>
                     </form>
-                </div>-->
-
-                <p>Our Contact email:
-                    <a id="emails" href="mailto:panopticon@whos-watching.me?subject=Panopticon">panopticon@whos-watching.me</a
-                </p>
+                </div>
             </div>
 
         </div>	<!--end of container-->
