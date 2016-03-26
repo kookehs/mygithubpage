@@ -6,9 +6,9 @@
         <title>Art2D</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
-       <link href="styles.css" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-       <link rel="stylesheet" href="../../bootstrap/css/boostrap_overlay.css">
+       <link href="../../standardStyle.css" rel="stylesheet" type="text/css">
+       <link rel="stylesheet" href="../../libraries/bootstrap/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="../../libraries/swipebox/src/css/swipebox.min.css" /> 
           
 		<!--COMMENT: This allows you to link to a font-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
 	</head>
 	<body>
         <!--Nav bar for main page and about-->
-		<div  id="containerNav" class="container">
+		<div id="containerNav" class="container">
             <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
                 <div class="container-fluid">
 
@@ -57,8 +57,10 @@
             </nav>
 			
             <div id="containerContent" class="container">
-                <div id="asset0" class="artAssest row">
-                    <img src="images/Sword.png" id="img0" onclick="replaceImage('img0');" class="shownImages img-responsive col-sm-2"/>
+                <div id="asset0" class="artAsset row">
+                	<a title="Sword" href="images/Sword.png" class="shownImages swipebox col-sm-2">
+                    	<img src="images/Sword.png" id="img0" class="img-responsive"/>
+                    </a>
                     
                     <h3 class="col-sm-10">Sword:</h3>
                     <p class="col-sm-10">2D sprite image for a sword. This item is used by the player to fight off bears
@@ -66,9 +68,10 @@
                     </p>
                     <p class="col-sm-5 pull-right">-Annette Yao</p>
                 </div>
-                <div id="asset1" class="artAssest row">
-                    <img src="images/winterbiome.jpg" id="img1" onclick="replaceImage('img1');" class="shownImages img-responsive col-sm-2"/>
-                    
+                <div id="asset1" class="artAsset row">
+                	<a title="Winter Biome Concept" href="images/winterbiome.jpg" class="shownImages swipebox col-sm-2">
+                    	<img src="images/winterbiome.jpg" id="img1" class="img-responsive"/>
+                    </a>
 			        
                     <h3 class="col-sm-10">Winter Biome Concept:</h3>
                     <p class="col-sm-10">Concept art for another game world level for Panopticon. The winter biome will
@@ -76,11 +79,11 @@
                     </p>
                     <p class="col-sm-5 pull-right">-Reshma Zachariah</p>
                 </div>
-                <div id="asset2" class="artAssest row">
-                    <img src="images/TheNomad.png" id="img2" onclick="replaceImage('img2');" class="shownImages img-responsive col-sm-2"/>
-                    
+                <div id="asset2" class="artAsset row">
+                	<a title="Nomad Walking Spritesheet" href="images/TheNomad.png" class="shownImages swipebox col-sm-2">
+                    	<img src="images/TheNomad.png" id="img2" class="img-responsive"/>
+                    </a>
                    
-			        
                     <h3 class="col-sm-10">Nomad Walking Spritesheet:</h3>
                     <p class="col-sm-10">The spritesheet used for the 2D character that the player plays as. A gender
                     	neutral character trapped in a strange place.
@@ -88,12 +91,6 @@
                     <p class="col-sm-5 pull-right">-Lindsay Van Zandt</p>
                 </div>
             </div>
-            
-            <div id="win" onclick="exitImage();" class="window img-responsive hidden">
-	        	<img src="images/Back.jpg"  class="popUp img-responsive"/>
-	        	<img src="images/Back.jpg" id="imgPop" class="imgPopUp img-responsive"/>
-	        </div>
-               
         </div>	<!--end of container-->
         
         <!--The bottom div of the page containing links to various parts of the website and external social media links-->
@@ -113,8 +110,9 @@
             </div>
         </div>
 	
-        <script src="../../jquery-1.2.0.js"></script>
-        <script src="../../bootstrap/js/bootstrap.min.js"></script>
-        <script src="BlowUp.js"></script>
+        <script src="../../libraries/jquery-1.2.0.js"></script>
+        <script src="../../libraries/bootstrap/js/bootstrap.min.js"></script>
+       	<script src="../../libraries/swipebox/src/js/jquery.swipebox.min.js"></script>
+        <script src="../../js/BlowUp.js"></script>
 	</body>
 </html>
