@@ -6,8 +6,9 @@
         <title>Art3D</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
-       <link href="styles.css" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+       <link href="../../standardStyle.css" rel="stylesheet" type="text/css">
+       <link rel="stylesheet" href="../../libraries/bootstrap/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="../../libraries/swipebox/src/css/swipebox.min.css" /> 
 	
 		<!--COMMENT: This allows you to link to a font-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
@@ -56,16 +57,22 @@
             </nav>
 			
             <div id="containerContent" class="container">
-                <div id="asset0" class="artAssest row">
-                    <img src="images/MockupImage.png" id="img0" onclick="replaceImage('img0');" class="shownImages img-responsive col-sm-2"/>
+                <div id="asset0" class="artAsset row">
+                	<a title="Forest Biome Mockup" href="images/MockupImage.png" class="shownImages swipebox col-sm-2">
+                    	<img src="images/MockupImage.png" id="img0" class="img-responsive"/>
+                    </a>
+                    
                     <h3 class="col-sm-10">Forest Biome Mockup:</h3>
                     <p class="col-sm-10">A first look at what the forest world biome looks like. Created in
                     	Blender.
                     </p>
                     <p class="col-sm-5 pull-right">-Alex Mao</p> 
                 </div>
-                <div id="asset1" class="artAssest row">
-                    <img src="images/Camera.png" id="img1" onclick="replaceImage('img1');" class="shownImages img-responsive col-sm-2"/>
+                <div id="asset1" class="artAsset row">
+                	<a title="Camera Surveillance" href="images/Camera.png" class="shownImages swipebox col-sm-2">
+                    	<img src="images/Camera.png" id="img1" class="img-responsive"/>
+                    </a>
+                    
                     <h3 class="col-sm-10">Camera Surveillance:</h3>
                     <p class="col-sm-10">A camera which can be found attached to any tree in the game world.
                     	Proof that the player is always being watched even when their is no one on the Twich chat.
@@ -73,12 +80,6 @@
                     <p class="col-sm-5 pull-right">-Jacob Le</p> 
                 </div>
             </div>
-            
-            <div id="win" onclick="exitImage();" class="window img-responsive hidden">
-	        	<img src="images/Back.jpg"  class="popUp img-responsive"/>
-	        	<img src="images/Back.jpg" id="imgPop" class="imgPopUp img-responsive"/>
-	        </div>
-               
         </div>	<!--end of container-->
         
         <!--The bottom div of the page containing links to various parts of the website and external social media links-->
@@ -99,8 +100,9 @@
         </div>
         
 		
-        <script src="../../jquery-1.2.0.js"></script>
-        <script src="../../bootstrap/js/bootstrap.min.js"></script>
-       <script src="BlowUp.js"></script>
+        <script src="../../libraries/jquery-1.2.0.js"></script>
+        <script src="../../libraries/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../libraries/swipebox/src/js/jquery.swipebox.min.js"></script>
+        <script src="../../js/BlowUp.js"></script>
 	</body>
 </html>
