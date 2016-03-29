@@ -1,23 +1,23 @@
 #selectionImage0{
-    width: 90%;
-    height: 90%;
-    float:center;
+    width: 60%;
+    height: 60%;
+    float:right;
 }
 
 #selectionImage1{
-    width: 70%;
-    height: 70%;
-    float:center;
+    width: 90%;
+    height: 90%;
+    float:left;
 }
 
 #selectionImage2{
     width: 90%;
     height: 90%;
-    float:center;
+    float:right;
 }
 
 #selectionImage3{
     width: 80%;
     height: 150px;
-    float:center;
+    float:left;
 }
