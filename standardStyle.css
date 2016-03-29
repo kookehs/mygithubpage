@@ -19,6 +19,14 @@ a {
     color: #901389 !important;
 }
 
+h3{
+	color: #6B6B6B !important;
+}
+
+label{
+	color: #6B6B6B !important;
+}
+
 .navbar{
     background-color: #000000 !important;
     text-align: center;
@@ -100,4 +108,40 @@ a {
 #carouselItems{
     margin: 0 auto;
     float:  center;
+}
+
+@media (max-width: 481px) {
+	p {
+		font-size: 12px;
+	}
+
+	a {
+		font-size: 16px;
+	}
+	
+	h3{
+		font-size: 16px !important;
+	}
+	
+	.container{
+		width: 90%;
+	}
+}
+
+@media (min-width: 481px) and (max-width:630px) {
+	p {
+		font-size: 16px;
+	}
+
+	a {
+		font-size: 21px;
+	}
+	
+	h3{
+		font-size: 21px !important;
+	}
+	
+	.container{
+		width: 85%;
+	}
 }
