@@ -1,16 +1,18 @@
-#musicAsset{
+.musicAsset{
     border-bottom: 0.5px solid #ccc;
+    padding-top: 1%;
     float:center;
 }
 
-#audioElement{
+.audioElement{
     width: 85%;
     float:center;
     display: table;
     margin: 0 auto;
+    padding-top: 1%;
 }
 
-#bars{
+.bars{
 	 float:center;
      display: table;
      margin: 0 auto;
