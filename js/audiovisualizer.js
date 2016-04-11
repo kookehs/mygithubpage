@@ -7,7 +7,9 @@ $(document).ready(function () {
       //get all elements with tag audioElement
       [].forEach.call (document.querySelectorAll ('.audioElement'),
         function (audioElement) {
-           
+            //audioElement.pause();
+            //audioElement.currentTime = 0;
+            
             var countInner = 0; //inner counter for second loop that is checked against outer counter
             //get all the elements with class audio
             [].forEach.call (document.querySelectorAll ('.audio'),
