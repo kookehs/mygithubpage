@@ -3,12 +3,12 @@
 	<head>
 		<meta name="google-site-verification" content="D2ePiN3vxTAMcx38nr9ZAhCPnRya482bnuh5YbSGXW0" />
 	   	<meta charset="utf-8">
-        <title>Blog</title>
+        <title>Then and Now</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
-       <link href="../standardStyle.css" rel="stylesheet" type="text/css">
-       <link href="styles.css" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="../libraries/bootstrap/css/bootstrap.min.css">
+       <link href="../../standardStyle.css" rel="stylesheet" type="text/css">
+       <link href="../styles.css" rel="stylesheet" type="text/css">
+       <link rel="stylesheet" href="../../libraries/bootstrap/css/bootstrap.min.css">
 	
 		<!--COMMENT: This allows you to link to a font-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
@@ -42,34 +42,46 @@
                             <li><a href="http://whos-watching.me/about/">About</a></li>
                         </ul>
                     </div>
+                    
+                   <div class="collapse navbar-collapse" id="return">
+                        <ul class="nav navbar-nav">
+                            <li><a href="http://whos-watching.me/blog">Return</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 			
-            <div id="containerContent" class="container">
-                <div id="blogPost1" class="posts">
-                    <img id"teamPhoto" class="imgPosts img-responsive" src="images/Panopticon(Team Nomad).png"/>
-                    <div class="text">
-	                    <h3>Our First Blog Post!</h3>
-	                    <p>
-	                    	Panopticon is an interactive experience (PC game) where the player must
-	                    	try to survive against Twitch chatters.
-	                    	<a href="http://whos-watching.me/blog/firstpost">Read more</a>
-	                    </p>
-	                    <p style="text-align: right;">-3/5/2016</p>
-                    </div>
-                </div>
-                <div id="blogPost2" class="posts">
-                    <img id"beforeAfter" class="imgPosts img-responsive" src="images/BurnTrees.png"/>
-                    <div class="text">
-	                    <h3>Then and Now</h3>
-	                    <p>
-	                    	We changed our game design once again for so many reasons mostly cause the last idea didn't
-	                    	make sense to people.
-	                    	<a href="http://whos-watching.me/blog/beforeAfter">Read more</a>
-	                    </p>
-	                    <p style="text-align: right;">-4/10/2016</p>
-                    </div>
-                </div>
+            <div id="containerContent" class="container" style="border-bottom: 0.5px solid #ccc;">
+                <img id"beforeAfter" class="imgPosts img-responsive" src="images/BurnTrees.png"/>
+                <h3>Then and Now</h3>
+                <p>
+                	In the beginning we (as in Bill our lead designer) had the idea for our game to be a collaborative game
+                	with Twitch working to help the player. One example would have been that in order for the player to cross
+                	a river the player must collect several resources around the map. Once the player has enough then Twitch
+                	would decide whether to craft a bridge, a boat, or to go moses on the river. This idea was scrapped
+                	because we could not trust Twitch to be helpful and forcing the player to rely upon the Twitch chatters
+                	who are notoriously known to be grievers made this idea difficult to build upon.
+					<br/>
+                	<br/>
+					For our next design idea we were going to make it so the player could craft and work on their own and
+					Twitch would try to manipulate the game world so that the player couldn’t progress easily through the
+					terrain. A Twitch vs Player scenario. With the same bridge example as before the player would still
+					collect resources but they would be the ones to craft the bridge that get’s them across the river. Twitch
+					then to stop the player could burn down a couple of trees so the player couldn’t get wood for the bridge.
+					<br/>
+                	<br/>
+					From the suggestion of our playtesters, three people so far, the game is now going to work in a mini-games
+					type of system. This will still utilize the system from our second idea where Twitch tries to destroy the
+					player, however, the player is now tasked with collecting items say some chickens and must return them to a
+					central HUB. Twitch as before can throw stuff at the player, like perhaps some bears, and the player must
+					defend themselves as they try to collect various items. So this version is a bit more like a battle arena.
+					<br/>
+                	<br/>
+					So with many months and many changes we have only one key element that has remained intact in our game which
+					is the use of Twitch integration. Twitch is a very difficult opponent for us, the developers.
+
+                </p>
+                <p style="text-align: right;">-4/10/2016</p>
             </div>
                
         </div>	<!--end of container-->
@@ -91,7 +103,7 @@
             </div>
         </div>
 	
-        <script src="../libraries/jquery-1.2.0.js"></script>
-        <script src="../libraries/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../libraries/jquery-1.2.0.js"></script>
+        <script src="../../libraries/bootstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>
