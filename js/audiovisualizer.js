@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     function visulaizer(){
       var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      var lastPlayed = undefined;
       var countOuter = 0; //counter used to make sure that svg  is not added multiple times to each audioElement
       
       //get all elements with tag audioElement
@@ -15,7 +16,7 @@ $(document).ready(function () {
             [].forEach.call (document.querySelectorAll ('.audio'),
                 function (audio) { 
                 if(countOuter === countInner) {
-                  if(!audioElement.canPlayType) audioElement.src = "audio/music_song.mp3.ogg";
+                  if(!audioElement.canPlayType) audioElement.src = "audio/overworld39mastered.mp3";
                   audioSrc = audioCtx.createMediaElementSource(audioElement);
                   var analyser = audioCtx.createAnalyser();
 
@@ -86,3 +87,8 @@ $(document).ready(function () {
       visulaizer();
   });
 });
+
+function audioStarted(playSong){
+	if(typeof lastPlayed != 'undefined') lastPlayed.pause();
+	lastPlayed = playSong;
+}

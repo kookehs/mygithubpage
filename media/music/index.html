@@ -22,7 +22,7 @@
 
                     <div class="navbar-header">
                         <!--Logo image button to go make to main page-->
-                        <a href="http://whos-watching.me/"><img src="images/PanopticonLogo.jpg" class="img-responsive" id="logo"/></a>
+                        <a href="http://whos-watching.me/"><img src="../../images/FeatherWeightBanner.jpg" class="img-responsive" id="logo"/></a>
                         
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,7 +38,7 @@
                             <li><a href="http://whos-watching.me/">Home</a></li>
                             <li><a href="http://whos-watching.me/blog">Blog</a></li>
                             <li><a href="http://whos-watching.me/media">Media</a></li>
-                            <li><a href="http://whos-watching.me/gameplay">Gameplay</a></li>
+                            <li><a href="http://whos-watching.me/press">Press</a></li>
                             <li><a href="http://whos-watching.me/about/">About</a></li>
                         </ul>
                     </div>
@@ -56,10 +56,10 @@
                 </div>
             </nav>
 			
-            <div id="containerContent" class="container">
+            <div id="containerContent">
                 <div id="musicAsset0" class="musicAsset">
                     <div class="bars audio" align="center"></div>
-                    <audio class="audioElement" align="center" controls>
+                    <audio class="audioElement" id="newOverworld" align="center" controls onplay="audioStarted(newOverworld);">
                         <source src="audio/overworld39mastered.mp3" type="audio/mpeg"/>
                         Your browser does not support the audio element.
                     </audio>
@@ -71,7 +71,7 @@
                 </div>
                 <div id="musicAsset1" class="musicAsset">
                     <div class="bars audio" align="center"></div>
-                    <audio class="audioElement" align="center" controls>
+                    <audio class="audioElement" id="intro" align="center" controls onplay="audioStarted(intro);">
                         <source src="audio/Intro.mp3" type="audio/mpeg"/>
                         Your browser does not support the audio element.
                     </audio>
@@ -83,7 +83,7 @@
                 </div>
                 <div id="musicAsset2" class="musicAsset">
                     <div class="bars audio" align="center"></div>
-                    <audio class="audioElement" align="center" controls>
+                    <audio class="audioElement" id="ambient" align="center" controls onplay="audioStarted(ambient);">
                         <source src="audio/Ambient 1.mp3" type="audio/mpeg"/>
                         Your browser does not support the audio element.
                     </audio>
@@ -95,7 +95,7 @@
                 </div>
                 <div id="musicAsset3" class="musicAsset">
                     <div class="bars audio" align="center"></div>
-                    <audio class="audioElement" align="center" controls>
+                    <audio class="audioElement" id="bossBattle" align="center" controls onplay="audioStarted(bossBattle);">
                         <source src="audio/boss battle mastered 38.mp3" type="audio/mpeg"/>
                         Your browser does not support the audio element.
                     </audio>
@@ -105,9 +105,9 @@
 	                    <p style="text-align: right;">-Matt Vollmer</p>
                     </div>
                 </div>
-                <div id="musicAsset0" class="musicAsset">
+                <div id="musicAsset0" class="musicAsset" style="border:none;">
                     <div class="bars audio" align="center"></div>
-                    <audio class="audioElement" align="center" controls>
+                    <audio class="audioElement" id="oldOverworld" align="center" controls onplay="audioStarted(oldOverworld);">
                         <source src="audio/music_song.ogg" type="audio/ogg"/>
                         <source src="audio/music_song.mp3" type="audio/mpeg"/>
                         Your browser does not support the audio element.
@@ -127,15 +127,15 @@
             <div id="socialMedia">
                 <!--Twitch social media icon-->
                 <a target="_blank" title="Find Us On Twitch" href="http://www.twitch.tv/panopticonthegame/profile">
-                    <img alt="Follow Us On Twitch" src="images/GlitchIcon_purple.png" width="40" height="40" border=0></a>
+                    <img alt="Follow Us On Twitch" src="../../images/GlitchIcon_purple.png" width="40" height="40" border=0></a>
                 
                 <!--Twitter social media icon-->
                 <a target="_blank" title="Find Us On Twitter" href="https://twitter.com/playpanopticon">
-                    <img alt="Follow Us On Twitter" src="images/twitter_40x40.png" width="40" height="40" border=0></a>
+                    <img alt="Follow Us On Twitter" src="../../images/twitter_40x40.png" width="40" height="40" border=0></a>
                 
                 <!--Reddit social media icon-->
                 <a target="_blank" title="Find Us On Reddit" href="https://www.reddit.com/user/panopticonthegame/">
-                    <img alt="Follow Us On Reddit" src="images/reddit-alien.png" width="40" height="40" border=0></a>
+                    <img alt="Follow Us On Reddit" src="../../images/reddit-alien.png" width="40" height="40" border=0></a>
             </div>
         </div>
 	    

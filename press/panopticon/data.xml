@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<game>
+	<title>Panopticon</title>
+	<release-date>12 June, 2016</release-date>
+	<website>http://www.whos-watching.me/</website>
+	<press-can-request-copy>TRUE</press-can-request-copy>
+
+	<platforms>
+		<platform>
+			<name>PC</name>
+			<link>http://www.whos-watching.me/</link>
+		</platform>
+		<!--<platform>
+			<name>Steam</name>
+			<link>http://www.steampowered.com/</link>
+		</platform>
+		<platform>
+			<name>Apple App Store</name>
+			<link>http://www.itunes.com/</link>
+		</platform>-->
+	</platforms>
+	
+	<prices>
+		<price>
+			<currency>USD</currency>
+			<value>FREE</value>
+		</price>
+	</prices>
+
+	<description>
+	Panopticon is a chicken-collecting action game that is designed for streamer-viewer competition through Twitch.tv.
+	</description>
+	
+	<history>
+	Panopticon was one of many, many games pitched in the UCSC Senior Game Design series. The pitch was for a exploration-survival game with Twitch integration and Natural Language Processing, called Nomad (a moniker we kept as a team name). A player would stream the game and crowd-source solutions to his/her problems. For example, if he/she needed to reach a faraway island, Twitch chatters would start buzzing about different ways of reaching that goal. Perhaps a bridge would materialize, or a boat. A team coalesced around this lofty, unorthodox game idea. We initially joked about collecting chickens as a central mechanic. And, because life is stranger than fiction, after a prototype that was considered "directionless" and many redesigns, we have arrived at what we now call Panopticon. Panopticon is an arena-style action game. Twitch chatters vote on what challenges and creatures the streamer will face in each round, with the streamer's ultimate goals being survival and, you guessed it, collection of as many chickens as possible.	
+	</history>
+
+	<features>
+		<feature>Designed from Day 1 with Twitch integration in both gameplay and interface.</feature>
+		<feature>Streamer fights off waves of enemies and collects chickens, as chatters type in commands that spawn trees, bears, rock monsters, and other mayhem!</feature>
+		<feature>In between waves, chatters vote on new skills to add to their repertoire. At the same time, the streamer spends his/her hard-won chickens on new items.</feature>
+		<feature>A visual style marked by handsome low-poly environments and quirky paper characters.</feature>
+		<feature>Most importantly, this game is made with love.</feature>
+	</features>
+	
+	<trailers>
+		<!--<trailer>
+			<name>Trailer</name>
+			<youtube>7jQbITg0MSk</youtube>
+			<vimeo>23571681</vimeo>
+		</trailer>
+		<trailer>
+			<name>Gameplay Video</name>
+			<youtube>7jQbITg0MSk</youtube>
+			<vimeo>23571681</vimeo>
+		</trailer>-->
+	</trailers>
+	
+	<awards>
+		<!--<award>
+			<description>Winner in this highly relevant contest.</description>
+			<info>Award Location, 20 October, 1989</info>
+		</award>
+		<award>
+			<description>Nomination for this prestigious award.</description>
+			<info>Award Ceremony, 4 December, 1991</info>
+		</award>
+		<award>
+			<description>Winner in this highly relevant contest.</description>
+			<info>Award Location, 20 October, 1989</info>
+		</award>
+		<award>
+			<description>Nomination for this prestigious award.</description>
+			<info>Award Ceremony, 4 December, 1991</info>
+		</award>-->
+	</awards>
+	
+	<quotes>
+		<!--<quote>
+			<description>This is a rather insignificant quote by a highly important person.</description>
+			<name>Person Name</name>
+			<website>Website</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>An extremely positive quote from a rather insignificant person. Also great.</description>
+			<name>Some Guy</name>
+			<website>This Page Is Visited By 12 Visitors A Month</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>I pretend to love this game even though I do not actually understand it.</description>
+			<name>Pretentious Bastard</name>
+			<website>Artsy Page</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>HOLY SHIT SO AMAZING</description>
+			<name>Caps Guy</name>
+			<website>Angry Review</website>
+			<link>http://</link>
+		</quote>-->
+	</quotes>
+	
+	<additionals>
+		<!--<additional>
+			<title>Original Soundtrack</title>
+			<description>Available for free from</description>
+			<link>http://somemusicsite.com/thislink</link>
+		</additional>
+		<additional>
+			<title>Release Blog Post</title>
+			<description>The blog-post through which this game was released is available at</description>
+			<link>http://vlambeer.com/bloglink</link>
+		</additional>-->
+	</additionals>
+	
+	<credits>
+		<credit>
+			<person>Bill Lin</person>
+			<role>Lead Designer, Developer</role>
+		</credit>
+		<credit>
+			<person>Alisa Prusa</person>
+			<role>Designer, Developer</role>
+		</credit>
+		<credit>
+			<person>Sidney Small</person>
+			<role>Designer, Developer</role>
+		</credit>
+		<credit>
+			<person>Tai Trinh</person>
+			<role>Designer, Developer</role>
+		</credit>
+		<credit>
+			<person>Sam Fields</person>
+			<website>sefields.github.io</website>
+			<role>Designer, Developer</role>
+		</credit>
+	</credits>
+</game>

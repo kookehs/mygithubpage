@@ -1,7 +1,8 @@
-#videoAsset{
+.videoAsset{
     border-bottom: 0.5px solid #ccc;
 }
 
-#video{
+.video{
     margin-top: 10px;
+    margin-bottom: 10px;
 }

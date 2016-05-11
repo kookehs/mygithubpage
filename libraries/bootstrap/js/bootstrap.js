@@ -397,6 +397,12 @@ if (typeof jQuery === 'undefined') {
 
     return this
   }
+  
+  Carousel.prototype.play = function (e) {
+    paused = false;
+
+    return this
+  }
 
   Carousel.prototype.next = function () {
     if (this.sliding) return

@@ -22,7 +22,7 @@
 
                     <div class="navbar-header">
                         <!--Logo image button to go make to main page-->
-                        <a href="http://whos-watching.me/"><img src="images/PanopticonLogo.jpg" class="img-responsive" id="logo"/></a>
+                        <a href="http://whos-watching.me/"><img src="../../images/FeatherWeightBanner.jpg" class="img-responsive" id="logo"/></a>
                         
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,7 +38,7 @@
                             <li><a href="http://whos-watching.me/">Home</a></li>
                             <li><a href="http://whos-watching.me/blog">Blog</a></li>
                             <li><a href="http://whos-watching.me/media">Media</a></li>
-                            <li><a href="http://whos-watching.me/gameplay">Gameplay</a></li>
+                            <li><a href="http://whos-watching.me/press">Press</a></li>
                             <li><a href="http://whos-watching.me/about/">About</a></li>
                         </ul>
                     </div>
@@ -56,20 +56,38 @@
                 </div>
             </nav>
 			
-            <div id="containerContent" class="container">
-                <div id="videoAsset" class="row">
-                    <video width="960" height="540" controls alt="coreRelease" id="video" class="col-sm-5 img-responsive">
+            <div id="containerContent">
+            	 <div class="videoAsset row">
+                    <img width="960" height="540" id="bareKnockback" class="video col-sm-5 img-responsive" src="videos/panopticon_gif_juice.gif">
+                    <h3 class="col-sm-5">Chicken Collection GIF:</h3>
+                    <p class="col-sm-6">Yes, this is a GIF not a video but it's got changing frames so deal with it! So this GIF shows what
+                    	happens when you hit a chicken with a sword then pick it. Notice the chicken currency in the top right corner going up.
+                    </p>
+                </div>
+            	<div class="videoAsset row">
+                    <video width="960" height="540" controls alt="coreRelease" id="coreRelease2" class="video col-sm-5 img-responsive">
+                              <source src="videos/CoreReleaseRedo.mp4" type="video/mp4">
+                              <source src="videos/CoreReleaseRedo.ogg" type="video/ogg">
+                              Your browser does not support HTML5 video.
+                    </video>
+                    <h3 class="col-sm-5">New Core Release Video:</h3>
+                    <p class="col-sm-6">A remake to show what the core release, streamer wise, is for the game. The old one no longer
+                    	represents the new design and so this is a better representative of what Feather Weight is about.
+                    </p>
+                </div>
+                <div class="videoAsset row" style="border:none;">
+                    <video width="960" height="540" controls alt="coreRelease" id="coreRelease1" class="video col-sm-5 img-responsive">
                               <source src="videos/CoreRelease.mp4" type="video/mp4">
                               <source src="videos/CoreRelease.ogg" type="video/ogg">
                               Your browser does not support HTML5 video.
                     </video>
-                    <h3 class="col-sm-5">Core Release Video:</h3>
-                    <p class="col-sm-6">A short video showing the player explore and utilize the world around them. This video
-                    	only contains the core release for what a player can do in the game world the Twitch integration is
+                    <h3 class="col-sm-5">Old Core Release Video:</h3>
+                    <p class="col-sm-6">A short video showing the streamer explore and utilize the world around them. This video
+                    	only contains the core release for what a streamer can do in the game world the Twitch integration is
                     	not shown here.
                     </p>
                 </div>
-               
+                </div>
         </div>	<!--end of container-->
         
         <!--The bottom div of the page containing links to various parts of the website and external social media links-->
@@ -77,15 +95,15 @@
             <div id="socialMedia">
                 <!--Twitch social media icon-->
                 <a target="_blank" title="Find Us On Twitch" href="http://www.twitch.tv/panopticonthegame/profile">
-                    <img alt="Follow Us On Twitch" src="images/GlitchIcon_purple.png" width="40" height="40" border=0></a>
+                    <img alt="Follow Us On Twitch" src="../../images/GlitchIcon_purple.png" width="40" height="40" border=0></a>
                 
                 <!--Twitter social media icon-->
                 <a target="_blank" title="Find Us On Twitter" href="https://twitter.com/playpanopticon">
-                    <img alt="Follow Us On Twitter" src="images/twitter_40x40.png" width="40" height="40" border=0></a>
+                    <img alt="Follow Us On Twitter" src="../../images/twitter_40x40.png" width="40" height="40" border=0></a>
                 
                 <!--Reddit social media icon-->
                 <a target="_blank" title="Find Us On Reddit" href="https://www.reddit.com/user/panopticonthegame/">
-                    <img alt="Follow Us On Reddit" src="images/reddit-alien.png" width="40" height="40" border=0></a>
+                    <img alt="Follow Us On Reddit" src="../../images/reddit-alien.png" width="40" height="40" border=0></a>
             </div>
         </div>
         
